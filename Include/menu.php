@@ -29,7 +29,7 @@ echo
 </li>
 <li><a href="account.php">Account</a></li>
 <li><a href="teams.php">My Teams</a></li>
-<li><a href="login">Log Out</a></li>    
+<li><a href="logout.php">Log Out</a></li>    
 </div>
 </nav>';
 }else{

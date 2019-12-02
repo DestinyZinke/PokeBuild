@@ -1,6 +1,5 @@
 <?php include 'Include/header.php'?>
 <?php
-
 //image here
 echo '';
 
@@ -13,10 +12,8 @@ echo '<div class="about-content">
 </div>
 </div>
 <br />';
-
 echo '<div class="about-content">
 <h2><b>Need to look up some Pokemon?</b></h2>
 <p>Use this <a href="pokemon.php">tool</a> to do some research!</p>
-</div>'
-?>
+</div>';?>
 <?php include 'Include/footer.php'?>

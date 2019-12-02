@@ -2,7 +2,7 @@
 <?php
 session_start();
 //search bar
-if(isset($_SESSION['user_id'])){
+if(isset($_SESSION['logged_in'])){
 echo '
 <form action = "build.php" method="POST">
 <input id="searchbar" name="search" type="text" placeholder="Search...">

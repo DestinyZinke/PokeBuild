@@ -16,7 +16,7 @@ $count = mysqli_num_rows($result);
 if ($count == 1){
 header("Location: http://localhost/PokeBuild/PokeBuild/index.php");
 $_SESSION['logged_in']= true;
-
+$_SESSION['user'] = $username;
 }else{
 echo "Invalid Login";
 //echo "Invalid Login Credentials";
