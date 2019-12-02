@@ -1,13 +1,13 @@
 <!DOCTYPE html >
 <html>
 <head>
-<title>MASHLOG LOGIN FORM</title>
+<title>Login</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body id="body_bg">
 <div>
 
-<h3>MASHLOG LOGIN FORM</h3>
+<h3>Login</h3>
     <form id="login-form" method="post" action="../Pokebuild/authen_login.php" >
         <table>
             <tr>

@@ -1,6 +1,6 @@
 <?php  
  require('dbconfig.php');
-
+session_start();
 if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
 	
 // Assigning POST values to variables.
@@ -15,6 +15,7 @@ $count = mysqli_num_rows($result);
 
 if ($count == 1){
 header("Location: http://localhost/PokeBuild/PokeBuild/index.php");
+$_SESSION['logged_in']= true;
 
 }else{
 echo "Invalid Login";

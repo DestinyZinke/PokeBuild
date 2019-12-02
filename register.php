@@ -1,24 +1,32 @@
-<?php  
- require('db_connect.php');
+<!DOCTYPE html >
+<html>
+<head>
+<title>Register</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="body_bg">
+<div>
 
-if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
-	
-// Assigning POST values to variables.
-$username = $_POST['user_id'];
-$password = $_POST['user_pass'];
-
-// CHECK FOR THE RECORD FROM TABLE
-$query = "SELECT * FROM `user_login` WHERE username='$username' and Password='$password'";
- 
-$result = mysqli_query($connection, $query) or die(mysqli_error($connection));
-$count = mysqli_num_rows($result);
-
-if ($count == 1){
-header("Location: http://localhost/PokeBuild/PokeBuild/index.php");
-
-}else{
-echo "Invalid Login";
-//echo "Invalid Login Credentials";
-}
-}
-?>
+<h3>Register</h3>
+    <form id="register-form" method="post" action="../Pokebuild/authen_register.php" >
+        <table>
+            <tr>
+                <td><label for="user_id">User Name</label></td>
+                <td><input type="text" name="user_id" id="user_id"></td>
+            </tr>
+            <tr>
+                <td><label for="user_pass">Password</label></td>
+                <td><input type="password" name="user_pass" id="user_pass"></input></td>
+            </tr>
+			
+            <tr>
+				
+                <td><input type="submit" value="Submit" />
+                <td><input type="reset" value="Reset"/>
+				
+            </tr>
+        </table>
+    </form>
+		</div>
+</body>
+</html>
