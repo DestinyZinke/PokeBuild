@@ -12,7 +12,7 @@
             echo '<br/>';
         }
     }else{
-        echo "Sorry we couldn't find that pokemon";
+        include 'pokedex.php';
     }
 
 

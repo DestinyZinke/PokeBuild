@@ -8,7 +8,7 @@
 <div>
 
 <h3>Login</h3>
-    <form id="login-form" method="post" action="../Pokebuild/authen_login.php" >
+    <form id="login-form" method="post" action="authen_login.php" >
         <table>
             <tr>
                 <td><label for="user_id">User Name</label></td>

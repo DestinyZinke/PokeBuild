@@ -18,18 +18,24 @@ echo
 <div class="logo">
 </div>
 <div class="nav-bar">
-<li>
-<a href="../PokeBuild/index.php">Home</a>
+<li class="nav-item">
+<a class="nav-link" href="../PokeBuild/index.php">Home</a>
 </li>
-<li>
-<a href="../PokeBuild/pokemon.php">Pokemon</a>
+<li class="nav-item">
+<a class="nav-link" href="../PokeBuild/pokemon.php">Pokemon</a>
 </li>
-<li>
-<a href="../PokeBuild/build.php">Team Builder</a>
+<li class="nav-item">
+<a class="nav-link" href="../PokeBuild/build.php">Team Builder</a>
 </li>
-<li><a href="account.php">Account</a></li>
-<li><a href="teams.php">My Teams</a></li>
-<li><a href="logout.php">Log Out</a></li>    
+<li class="nav-item">
+<a class="nav-link" href="../PokeBuild/Account/account.php">Account</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../PokeBuild/teams.php">My Teams</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../PokeBuild/Account/logout.php">Log Out</a>
+</li>    
 </div>
 </nav>';
 }else{
@@ -38,18 +44,24 @@ echo
     <div class="logo">
     </div>
     <div class="nav-bar">
-    <li>
-    <a href="../PokeBuild/index.php">Home</a>
+    <li class="nav-item">
+    <a class="nav-link" href="../PokeBuild/index.php">Home</a>
     </li>
-    <li>
-    <a href="../PokeBuild/pokemon.php">Pokemon</a>
+    <li class="nav-item">
+    <a class="nav-link" href="../PokeBuild/pokemon.php">Pokemon</a>
     </li>
-    <li>
-    <a href="../PokeBuild/build.php">Team Builder</a>
+    <li class="nav-item">
+    <a class="nav-link" href="../PokeBuild/build.php">Team Builder</a>
     </li>
-    <li><a href="account.php">Account</a></li>
-    <li><a href="teams.php">My Teams</a></li>
-    <li><a href="login">Log In</a></li>    
+    <li class="nav-item">
+    <a class="nav-link" href="../PokeBuild/Account/account.php">Account</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="../PokeBuild/teams.php">My Teams</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="../PokeBuild/login.php">Log In</a>
+    </li>       
     </div>
     </nav>'; 
 }

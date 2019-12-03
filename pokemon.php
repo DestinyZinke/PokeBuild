@@ -1,4 +1,4 @@
-<?php include "Include/header.php";?>
+<?php include "../PokeBuild/Include/header.php";?>
 <?php
 //search bar
 echo '
@@ -8,4 +8,4 @@ echo '
 </form>';
 //results page
 ?>
-<?php include "Include/all_pokemon.php";?>
+<?php include "Subpages/search_result.php";?>
