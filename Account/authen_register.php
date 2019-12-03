@@ -1,5 +1,5 @@
 <?php  
- require('dbconfig.php');
+ require('../PokeBuild/Pokebuild/Sql/dbconfig.php');
  session_start();
 if (isset($_POST['user_id']) and isset($_POST['user_pass'])){
 	
@@ -12,6 +12,7 @@ $query = 'INSERT INTO users (username,Password)VALUES ("'.$username.'","'.$passw
 mysqli_query($connection, $query) or die(mysqli_error($connection));
 
 $_SESSION['logged_in']= true;
+$_SESSION['user']= $username;
 header("Location: http://localhost/PokeBuild/PokeBuild/index.php");
 
 // }else{

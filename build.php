@@ -1,9 +1,10 @@
 <?php include "Include/header.php";?>
 <?php
-session_start();
 //search bar
 if(isset($_SESSION['logged_in'])){
 echo '
+<br />
+<br/>
 <form action = "build.php" method="POST">
 <input id="searchbar" name="search" type="text" placeholder="Search...">
 <input id="submit" type="submit" value="Search">
@@ -13,4 +14,4 @@ echo '
 }
 //results page
 ?>
-<?php include "Include/results.php";?>
+<?php include "search_result.php";?>

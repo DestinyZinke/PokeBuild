@@ -1,3 +1,6 @@
+<?php 
+echo '<body class="pokedex_body"';
+?>
 <?php
     $name ='';
     if(isset($_POST['search'])){
@@ -15,11 +18,16 @@
         $url = 'https://pokeapi.co/api/v2/pokemon/';
         $data = file_get_contents($url);
         $json = json_decode($data, true);
+        echo "<div class='row'><div class='column'>";
         foreach($json['results'] as $result){
-            echo $result['name'];
-            echo '<br />';
+            echo '<a href="dex_entry.php?name='.$result['name'].'">
+            <img class="pokemon-image" src="https://img.pokemondb.net/artwork/'.$result['name'].'.jpg">
+            </a>';
         }
+        echo "</div></div>";
     }
 
-
-?>
+    ?>
+    <?php
+    echo '</body>';
+    ?>
